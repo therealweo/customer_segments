@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11837,7 +11837,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -11964,7 +11964,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12092,7 +12092,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -12231,7 +12231,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14916,7 +14916,7 @@ MzMzMzMzs7b8P6YbhZeIVDkmAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -20525,7 +20525,7 @@ QmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># just for fun: rechecking R^2 on the regressions with the log data</span>
@@ -20579,7 +20579,7 @@ R^2 score for Delicatessen is -0.744714316352
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -20670,7 +20670,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">outliers1</span> <span class="o">=</span> <span class="p">[]</span>
@@ -21355,7 +21355,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;These points were removed because they were outliers for multiple features:&quot;</span>
@@ -24072,7 +24072,7 @@ fzmKI26Zh89hAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> K-Means is great in situations where clusters are clearly defined and separable, while Gaussian Mixture Models do better in situations where the clusters may overlap and covary. Given that our plot above doesn't show any clear and easily separable clusters, we'll go with the Gaussian Mixture Model for this problem.</p>
+<p><strong>Answer:</strong> K-Means is a fast, highly scalable algorithm that does very well when data points can be categorically assigned to one cluster or another, i.e. when the clusters are clearly separated and distinct. However, K-Means can run into trouble when the clusters are not roughly circular in form, when they are of different sizes, or when they contain very different numbers of points, because of the assumptions that underlie the algorithm (mainly that euclidean distance is a good metric for the similarity of two points). Gaussian Mixture Models are a more general form of K-means that is freed from some of these assumptions, and can model clusters that exhibit covariance. They also have the advantage of being able to model cases where points do not clearly belong to one cluster or another, since they generate probabilities rather than categorical clusters. On the other hand, Gaussian Mixture Models are not scalable to very large datasets. Given that our plot above doesn't show any clear and easily separable clusters, and that we might expect our establishments to show characteristics of both Dimension 1 and Dimension 2, we'll go with the Gaussian Mixture Model for this problem.</p>
 
 </div>
 </div>
@@ -25434,7 +25434,8 @@ AEDPKIQAAAAAekYhBAAAANAzCiEAAACAnvl/quBPy73DW44AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> As we expected, Segment 0 looks like a grocery store, spending the most on groceries out of any expenditure category, followed by dairy and fresh produce, plus some home cleaning supplies and a few deli and frozen items. Segment 1 represents restaurants and other establishments with kitchens, buying mainly fresh ingredients with some dairy, grocery and frozen items. They buy only the cleaning products they use and a smaller number of deli ingredients.</p>
+<p><strong>Answer:</strong> The representative member of Segment 0 spends the most on grocery goods, spending more than the mean and median amounts in this category. They spend close to the mean amount on dairy, and somewhat more than the 25th percentile on fresh goods. Their frozen goods expenditures are just below the median amount for the category. They spend close to the median amount on deli goods, but score near the 75th percentile for their expenditures on paper and detergent products. All this supports our earlier conclusion that Segment 0 represents grocery stores, which purchase mainly grocery goods to sell, as well as relatively large amounts of dairy, fresh goods, and home cleaning and paper products. The representative establishment in Segment 1 spends more on fresh and frozen goods, coming in at just about the median values for each category. They spend less than the median on dairy, on groceries, and near the 25th percentile on detergents and paper products. Their expenditures on deli products are relatively small as well, coming in just below the median. This supports the conclusion that Segment 1 represents restaurants and other establishments with kitchens, buying mainly fresh ingredients with some dairy, grocery and frozen items. They buy only the cleaning products they use and a smaller number of deli ingredients.</p>
+<p>Interestingly, both representative points spend well below the mean on fresh and frozen goods and on deli products. This indicates that the bulk of the wholesaler's customers are smaller establishments, but that a few customers buy relatively enormous amounts of goods.</p>
 
 </div>
 </div>
@@ -25486,10 +25487,81 @@ Sample point 2 predicted to be in Cluster 1
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Somewhat unsurprisingly by now, sample 0 is predicted to be a grocery store while samples 1 and 2 are both expected to be restaurants or other food-serving establishments.</p>
+<p><strong>Answer:</strong> Somewhat unsurprisingly by now, sample 0 is predicted to be a grocery store while samples 1 and 2 are both expected to be restaurants or other food-serving establishments. If we compare the spending amounts for our samples to the representative points above, we can see that sample 0 matches cluster 0 well except for a larger amount of spending on fresh foods. Sample 1 appears in most respects to be a scaled-up version of the representative for segment 1, and sample 2 looks very much like cluster 1: a large expenditure on fresh and frozen goods, with relatively little spending in other categories.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">samples</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fresh</th>
+      <th>Milk</th>
+      <th>Grocery</th>
+      <th>Frozen</th>
+      <th>Detergents_Paper</th>
+      <th>Delicatessen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>7780</td>
+      <td>2495</td>
+      <td>9464</td>
+      <td>669</td>
+      <td>2518</td>
+      <td>501</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>45640</td>
+      <td>6958</td>
+      <td>6536</td>
+      <td>7368</td>
+      <td>1532</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>9385</td>
+      <td>1530</td>
+      <td>1422</td>
+      <td>3019</td>
+      <td>227</td>
+      <td>684</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
